@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Onitsuka Tiger</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar-one flex">
+      <div class="left">
+        <div class="logo">
+          <img src="img/textlogo.png" alt="" />
+        </div>
+      </div>
+      <div class="right flex">
+        <div class="find-store">
+          <li><a href="#">Find Store</a></li>
+        </div>
+        <div class="line"></div>
+        <div class="login">
+          <li><a href="#">Login</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navbar-two flex">
+      <div class="left2 flex">
+        <div class="logo">
+          <img src="img/Logo.png" alt="" />
+        </div>
+      </div>
+      <div class="center flex">
+        <ul class="flex">
+          <li><a href="produk.html">SALE</a></li>
+          <li><a href="#">NEW</a></li>
+          <li><a href="#">BRANDS</a></li>
+        </ul>
+      </div>
+      <div class="right2 flex">
+        <div class="search">
+          <input type="text" placeholder="Search...">
+          <i class="bx bx-search"></i>
+        </div>
+        <div class="fav">
+          <a href="#">
+            <i class="bx bx-heart"></i>
+          </a>
+        </div>
+        <div class="cart">
+          <a href="#">
+            <i class="bx bx-cart"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="kotak">
+      <div class="kata">
+        <span>Search, Shop, Customize & Live With Us.</span><br />
+        <p>
+          View our Shopping Concierge for a more elevated shopping experience.
+        </p>
+      </div>
+      <a href="#" class="signup">Join Us.</a>
+    </div>
+  </header>
+
+  <!-- POPUP FORM -->
+  <div class="form-popup">
+    <div class="form-box">
+      
+    </div>
+  </div>
+
+  <section class="lanfoto">
+    <div class="foto">
+      <iframe id="youtubeFrame" src="https://www.youtube.com/embed/S348Hecpke0?autoplay=1&vq=hd720" frameborder="0"
+        allowfullscreen></iframe>
+    </div>
+    <div class="backtext">
+      <h1>STEPPING INTO THE NEW YEAR WITH ONITSUKA</h1>
+      <p class="one">
+        Feel the vibrancy in your all-day looks that take you where you want
+        to go.
+      </p>
+      <p class="two">
+        Shop our new year collection.
+      </p>
+    </div>
+    <button class="shop1">
+      <li><a href="#">Shop</a></li>
+    </button>
+  </section>
+
+  <section class="populer">
+    <div class="judul">
+      <h2>Populer</h2>
+    </div>
+    <div class="card">
+      <img src="img/populer1.jpg" alt="Deskripsi Gambar">
+      <div class="card-content">
+        <p class="title">Vintage Casual Trainers</p>
+        <p class="description">Onitsuka Tiger Corsain</p>
+      </div>
+      <div class="overlay">
+        <p>Teks Anda di sini</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/populer2.jpg" alt="Deskripsi Gambar">
+      <div class="card-content">
+        <p class="title">Onitsuka Tiger Bruce Lee</p>
+        <p class="description"></p>
+      </div>
+      <div class="overlay">
+        <p>Teks Anda di sini</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/populer3.jpg" alt="Deskripsi Gambar">
+      <div class="card-content">
+        <p class="title">Onitsuka Tiger Tokuten</p>
+        <p class="description"></p>
+      </div>
+      <div class="overlay">
+        <p>Teks Anda di sini</p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="new">
+    <div class="judul">
+      <h2>New Product</h2>
+    </div>
+    <div class="card-new">
+      <img src="img/serrano shoes.jpg" alt="">
+      <div class="card-button">
+      <button class="img-button">Shop</button>
+      </div>
+    </div>
+    <div class="card-new">
+      <img src="img/mexico 66 slip on.jpg" alt="">
+      <div class="card-button">
+        <button class="img-button">Shop</button>
+        </div>
+    </div>
+  </section>
+
+  <script>
+    var youtubeFrame = document.getElementById('youtubeFrame');
+
+    // Menambahkan event listener untuk memulai pemutaran otomatis setelah halaman dimuat
+    window.addEventListener('load', function () {
+      // Mendapatkan API YouTube iframe
+      var player;
+      onYouTubeIframeAPIReady = function () {
+        player = new YT.Player('youtubeFrame', {
+          events: {
+            'onReady': onPlayerReady
+          }
+        });
+      };
+
+      // Menentukan tindakan yang diambil saat pemutar siap
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+    });
+  </script>
+
+  <!-- Memuat API JavaScript YouTube iframe -->
+  <script src="https://www.youtube.com/iframe_api"></script>
+</body>
+
+</html>
